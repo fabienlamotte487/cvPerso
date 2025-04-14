@@ -1,2 +1,3 @@
-@import url("nav.scss");
-@import url("typo.scss");
+@use 'variables' as vars;
+@use 'typo' as typo;
+@use 'nav' as nav;
