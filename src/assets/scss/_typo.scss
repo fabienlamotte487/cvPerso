@@ -35,6 +35,10 @@
     src: url("./../font/Manrope-SemiBold.ttf") format("truetype");
 }
 
+*{
+    color: $darkColor;
+}
+
 h1{
     font-family: $bold !important;
     font-size: $font-size-h1;

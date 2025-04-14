@@ -1,3 +1,8 @@
-@use 'variables' as vars;
-@use 'typo' as typo;
-@use 'nav' as nav;
+@use 'variables';
+@use 'typo';
+@use 'nav';
+
+html, body {
+    margin: 0;
+    padding: 0;
+}

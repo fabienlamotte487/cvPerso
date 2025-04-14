@@ -9,6 +9,7 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true, // supprime les fichiers anciens à chaque build
+    publicPath: '/', // permet de servir le contenu depuis la racine
   },
   mode: 'production',
   module: {
@@ -21,6 +22,13 @@ module.exports = {
           'sass-loader'
         ]
       },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'images/[name][ext]'
+        }
+      }
     ]
   },
   plugins: [
