@@ -12,9 +12,6 @@ nav{
         &:first-child li{
             margin-right: 2rem;
         }
-        &:last-child li{
-            margin-left: 1rem;
-        }
 
         li{
             display: flex;
@@ -29,10 +26,6 @@ nav{
             }
         }
 
-        img{
-            height: 50px;
-            width: 50px;
-        }
     }
 }
 

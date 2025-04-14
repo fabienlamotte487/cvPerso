@@ -17,7 +17,7 @@
                 <li><a href="#portfolio" title="Se rendre à la section 'Mon portfolio'">Mon portfolio</a></li>
                 <li><a href="#contactme" title="Se rendre à la section 'Contactez moi'">Contactez moi</a></li>
             </ul>
-            <ul>
+            <ul class="socials">
                 <li>
                     <a href="https://www.linkedin.com/in/fabien-lamotte-305043200/" target="_blank" title="Accéder à mon profil Linkedin">
                         <img src="<%= require('./assets/img/svg/linkedin.svg') %>" alt="Logo Linkedin" title="Accéder à mon profil Linkedin" />
@@ -49,16 +49,38 @@
     <main>
         <section id="whoami">
             <img src="<%= require('./assets/img/png/profil.png') %>" title="Ma tête" alt="Ma tête" class="image">
-            <h1>LAMOTTE Fabien<br/>Développeur front-end web et mobile</h1>
-            <p>Je transforme des maquettes en interfaces web solides, accessibles et fidèles à la vision des graphistes, tout en respectant les bonnes pratiques du web.</p>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node.js</li>
-            </ul>
-            <button>Me contacter</button>
+            <div>
+                <h1>LAMOTTE Fabien<br/>Développeur front-end web et mobile</h1>
+                <p>Je transforme des maquettes en interfaces web solides, accessibles et fidèles à la vision des graphistes, tout en respectant les bonnes pratiques du web.</p>
+                <ul class="socials">
+                    <li>
+                        <a href="https://www.linkedin.com/in/fabien-lamotte-305043200/" target="_blank" title="Accéder à mon profil Linkedin">
+                            <img src="<%= require('./assets/img/svg/linkedin.svg') %>" alt="Logo Linkedin" title="Accéder à mon profil Linkedin" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/fabien-lamotte/" target="_blank" title="Accéder à mon profil Malt">
+                            <img src="<%= require('./assets/img/svg/malt.svg') %>" alt="Logo Malt" title="Accéder à mon profil Malt" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/fabienlamotte487" target="_blank" title="Accéder à mon profil Github">
+                            <img src="<%= require('./assets/img/svg/github.svg') %>" alt="Logo Github" title="Accéder à mon profil Github" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/fabien-lamotte/" target="_blank" title="Accéder à mon profil Instagram">
+                            <img src="<%= require('./assets/img/svg/instagram.svg') %>" alt="Logo Instagram" title="Accéder à mon profil Instagram" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/fabien-lamotte/" target="_blank" title="Accéder à mon profil Facebook">
+                            <img src="<%= require('./assets/img/svg/fb.svg') %>" alt="Logo Facebook" title="Accéder à mon profil Facebook" />
+                        </a>
+                    </li>
+                </ul>
+                <button type="button">Me contacter</button>
+            </div>
         </section>
         <section id="opquastcertified">
             <h2>Certifié Opquast</h2>

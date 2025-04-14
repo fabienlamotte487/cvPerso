@@ -1,8 +1,37 @@
-@use 'variables';
+// GLOBAL SCSS FILE
+@use 'variables' as *;
 @use 'typo';
 @use 'nav';
+
+// SECTIONS
+@use 'sections/whoami';
+
+// COMPONENTS
+@use 'components/socials';
+@use 'components/buttons';
 
 html, body {
     margin: 0;
     padding: 0;
+}
+
+body {
+    background: $primaryColor;
+}
+
+header, main{
+    background-color: white;
+}
+
+main{
+    margin: 5rem 15rem;
+    padding: 5rem;
+    border-radius: 30px;
+}
+
+@media screen and (max-width: 992px) {
+    main{
+        margin: 2rem;
+        padding: 2rem;
+    }
 }
