@@ -1,0 +1,49 @@
+@use '../variables' as *;
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    .title {
+      display: flex;
+      align-items: center;
+  
+      .title-img {
+        border-radius: 50%;
+        background: $primaryColor;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+  
+        img {
+          height: 70px;
+          width: 70px;
+          background: $whiteColor;
+          border-radius: 50%;
+          object-fit: contain;
+          padding: 0.5rem;
+        }
+      }
+  
+      .title-text {
+        background: $primaryColor;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        margin-left: -50px;
+  
+        h2 {
+          background: $whiteColor;
+          padding: 0 1rem 0 3rem;
+          border-radius: 30px;
+          margin: 0;
+        }
+      }
+    }
+  }
+  

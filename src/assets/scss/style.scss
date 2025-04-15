@@ -9,6 +9,7 @@
 // COMPONENTS
 @use 'components/socials';
 @use 'components/buttons';
+@use 'components/title';
 
 html, body {
     margin: 0;
@@ -24,6 +25,13 @@ main{
     padding: 5rem;
     border-radius: 30px;
     background-color: white;
+}
+
+@media screen and (max-width: 1400px) {
+    main{
+        margin: 5rem;
+        padding: 3rem;
+    }
 }
 
 @media screen and (max-width: 992px) {
