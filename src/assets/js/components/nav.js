@@ -5,12 +5,12 @@ const nav = document.querySelector("nav");
 document.addEventListener("DOMContentLoaded", function () {
     buttonBurger.addEventListener("click", function () {
         nav.classList.add("display");
-        buttonBurger.style.display = "none";
-        buttonCloseBurger.style.display = "block";
+        buttonBurger.classList.remove("show");
+        buttonCloseBurger.classList.add("show");
     });
     buttonCloseBurger.addEventListener("click", function () {
         nav.classList.remove("display");
-        buttonBurger.style.display = "block";
-        buttonCloseBurger.style.display = "none";
+        buttonBurger.classList.add("show");
+        buttonCloseBurger.classList.remove("show");
     });
 });
