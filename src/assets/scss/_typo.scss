@@ -58,3 +58,25 @@ p, a, button{
     font-family: $regular;
     font-size: $font-size-default;
 }
+
+@media screen and (max-width: 578px) {
+    h1{
+        font-family: $bold !important;
+        font-size: $resp-font-size-h1;
+    }
+    
+    h2{
+        font-family: $bold;
+        font-size: $resp-font-size-h2;
+    }
+    
+    h3{
+        font-family: $bold;
+        font-size: $resp-font-size-h3;
+    }
+    
+    p, a, button{
+        font-family: $regular;
+        font-size: $resp-font-size-default;
+    }
+}
