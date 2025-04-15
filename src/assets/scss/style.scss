@@ -19,14 +19,11 @@ body {
     background: $primaryColor;
 }
 
-header, main{
-    background-color: white;
-}
-
 main{
     margin: 5rem 15rem;
     padding: 5rem;
     border-radius: 30px;
+    background-color: white;
 }
 
 @media screen and (max-width: 992px) {
