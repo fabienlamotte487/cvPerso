@@ -41,14 +41,14 @@ section{
     }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: $desktop) {
     main{
         margin: 5rem;
         padding: 3rem;
     }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: $tablet) {
     main{
         margin: 2rem;
         padding: 2rem;

@@ -1,3 +1,5 @@
+@use "../variables" as *;
+
 #whoami{
     display: flex;
     width: 100%;
@@ -33,7 +35,7 @@
     }
 }
   
-@media screen and (max-width: 992px) {
+@media screen and (max-width: $smalltablet) {
     #whoami{
         flex-direction: column;
     }

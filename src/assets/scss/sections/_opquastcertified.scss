@@ -1,3 +1,5 @@
+@use "../variables" as *;
+
 #opquastcertified {
   a.card-link {
     width: 100%;
@@ -69,13 +71,13 @@
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: $tablet) {
   #opquastcertified a.card-link{
     max-width: 300px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $smalltablet) {
   #opquastcertified {
     a.card-link{
       max-width: 200px;
