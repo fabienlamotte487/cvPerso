@@ -42,7 +42,7 @@ header{
             }
         }
     }
-    #menuBurger{
+    #menuBurger, #menuClose{
         height: 50px;
         width: 50px;
         display: none;
@@ -62,7 +62,7 @@ header{
 @media screen and (max-width: 992px) {
     header{
         position: relative;
-        #menuBurger{
+        #menuBurger, #menuClose{
             display: block;
             position: absolute;
             top: 0;
@@ -74,6 +74,9 @@ header{
             &:hover{
                 opacity: 0.7;
             }
+        }
+        #menuClose{
+            display: none;
         }
 
         nav{
