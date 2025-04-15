@@ -5,6 +5,7 @@
 
 // SECTIONS
 @use 'sections/whoami';
+@use 'sections/opquastcertified';
 
 // COMPONENTS
 @use 'components/socials';
@@ -25,6 +26,19 @@ main{
     padding: 5rem;
     border-radius: 30px;
     background-color: white;
+}
+
+.centerContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    margin: 3rem 0;
+    .content{
+        margin: 5rem 0;
+    }
 }
 
 @media screen and (max-width: 1400px) {

@@ -1,0 +1,71 @@
+#opquastcertified {
+    a.card-link {
+      width: 100%;
+      max-width: 500px;
+      aspect-ratio: 1 / 1;
+      border-radius: 50px;
+      position: relative;
+      display: block;
+  
+      img:not(.back-picture) {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+  
+      img.back-picture {
+        position: absolute;
+        z-index: 0;
+        height: 50%;
+        width: 50%;
+        opacity: 0;
+        transform: scale(0.7);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        animation: none;
+  
+        &.computer {
+          top: 5%;
+          left: 5%;
+        }
+  
+        &.mobile {
+          top: 5%;
+          right: 5%;
+        }
+      }
+  
+      &.show,
+      &:hover {
+        img.back-picture {
+          opacity: 1;
+          &.computer{
+            transform: rotate(-25deg) translate(-60%, -50%);
+          }
+          &.mobile{
+            transform: rotate(25deg) translate(50%, -50%);
+          }
+        }
+      }
+  
+      span {
+        position: absolute;
+        bottom: 0;
+        z-index: 2;
+        color: white;
+        font-size: 1.2rem;
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+      }
+  
+    }
+  }
