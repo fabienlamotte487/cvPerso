@@ -1,25 +1,54 @@
-const buttonBurger = document.getElementById("menuBurger");
-const buttonCloseBurger = document.getElementById("menuClose");
-const nav = document.querySelector("nav");
-const header = document.querySelector("header");
+export class Navigation{
+    constructor(){
+        this.buttonBurger = document.getElementById("menuBurger");
+        this.buttonCloseBurger = document.getElementById("menuClose");
+        this.nav = document.querySelector("nav");
+        this.header = document.querySelector("header");
+        this.liMenus = document.querySelectorAll("nav ul:first-child li a");
+        this.init();
+    }
 
-document.addEventListener("DOMContentLoaded", function () {
-    buttonBurger.addEventListener("click", function () {
-        nav.classList.add("display");
-        buttonBurger.classList.remove("show");
-        buttonCloseBurger.classList.add("show");
-    });
-    buttonCloseBurger.addEventListener("click", function () {
-        nav.classList.remove("display");
-        buttonBurger.classList.add("show");
-        buttonCloseBurger.classList.remove("show");
-    });
+    init(){
+        let isNavigationElementsThere = this.isNavigationElementsThere();
 
-    document.addEventListener("scroll", function () {
-        if (window.scrollY > 75) {
-            header.classList.add("scroll");
-        } else {
-            header.classList.remove("scroll");
+        if(!isNavigationElementsThere){
+            console.error("Des éléments de navigation ne sont pas présents ! Vérifiez le HTML.");
+            return;
         }
-    });
-});
+
+        this.buttonBurger.addEventListener("click", this.showResponsiveNavigation.bind(this));
+        this.buttonCloseBurger.addEventListener("click", this.hideResponsiveNavigation.bind(this));
+        this.liMenus.forEach((liMenu) => {
+            liMenu.addEventListener("click", this.hideResponsiveNavigation.bind(this));
+        });
+        this.preventScrolling();
+    }
+
+    isNavigationElementsThere(){
+        if(this.buttonBurger && this.buttonCloseBurger && this.nav && this.header && this.liMenus.length > 0){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    showResponsiveNavigation(){
+        this.nav.classList.add("display");
+        this.buttonBurger.classList.remove("show");
+        this.buttonCloseBurger.classList.add("show");
+    }
+
+    hideResponsiveNavigation(){
+        this.nav.classList.remove("display");
+        this.buttonBurger.classList.add("show");
+        this.buttonCloseBurger.classList.remove("show");
+    }   
+
+    preventScrolling(){
+        if (window.scrollY > 75) {
+            this.header.classList.add("scroll");
+        } else {
+            this.header.classList.remove("scroll");
+        }
+    }
+}
