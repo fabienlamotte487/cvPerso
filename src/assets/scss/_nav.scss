@@ -90,15 +90,13 @@ header{
             opacity: 1;
             height: auto;
             position: absolute;
-            display: block;
-            top: -100%;
+            display: none;
+            top: 0;
             left: 0;
             right: 0;
             background-color: white;
             padding: 2rem;
             margin-top: $nav-height;
-            opacity: 0;
-            transition: top 0s ease, opacity 0s ease;
             ul{
                 align-items: center;
                 justify-content: center;
@@ -117,9 +115,7 @@ header{
             }
         }
         nav.display{
-            top: 0;
-            opacity: 1;
-            transition: top 0.3s ease, opacity 0.3s ease;
+            display: block;
         }
     }
 
