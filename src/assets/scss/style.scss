@@ -6,6 +6,7 @@
 // SECTIONS
 @use 'sections/whoami';
 @use 'sections/opquastcertified';
+@use 'sections/highwhy';
 
 // COMPONENTS
 @use 'components/socials';
@@ -51,6 +52,6 @@ section:not(:first-child){
 @media screen and (max-width: $tablet) {
     main{
         margin: 1rem;
-        padding: 2rem;
+        padding: 1rem;
     }
 }
