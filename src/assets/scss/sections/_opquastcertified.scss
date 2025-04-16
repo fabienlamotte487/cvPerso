@@ -9,7 +9,7 @@
     position: relative;
     display: block;
 
-    img:not(.back-picture) {
+    img:not(.back-picture):not(.front-picture) {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -19,6 +19,15 @@
       position: absolute;
       top: 0;
       left: 0;
+    }
+
+    img.front-picture {
+      position: absolute;
+      z-index: 2;
+      top: 1rem;
+      right: 1rem;
+      height: auto;
+      width: 75px;
     }
 
     img.back-picture {
