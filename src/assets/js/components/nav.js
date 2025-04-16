@@ -21,7 +21,8 @@ export class Navigation{
         this.liMenus.forEach((liMenu) => {
             liMenu.addEventListener("click", this.hideResponsiveNavigation.bind(this));
         });
-        this.stickyWhileScrolling();
+        
+        window.addEventListener("scroll", this.stickyWhileScrolling.bind(this));
     }
 
     isNavigationElementsThere(){
