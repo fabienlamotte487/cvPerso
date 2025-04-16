@@ -61,13 +61,15 @@ p, a, button{
 
 @media screen and (max-width: $mobile) {
     h1{
-        font-family: $bold !important;
+        font-family: $bold;
         font-size: $resp-font-size-h1;
+        line-height: 2rem;
     }
     
     h2{
         font-family: $bold;
         font-size: $resp-font-size-h2;
+        line-height: 2rem;
     }
     
     h3{
