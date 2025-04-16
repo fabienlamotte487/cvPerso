@@ -41,8 +41,8 @@
         right: 5%;
       }
     }
-
-    &.show,
+    &:active,
+    &:focus,
     &:hover {
       img.back-picture {
         opacity: 1;
