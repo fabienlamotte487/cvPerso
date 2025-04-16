@@ -21,7 +21,7 @@ export class Navigation{
         this.liMenus.forEach((liMenu) => {
             liMenu.addEventListener("click", this.hideResponsiveNavigation.bind(this));
         });
-        this.preventScrolling();
+        this.stickyWhileScrolling();
     }
 
     isNavigationElementsThere(){
@@ -44,7 +44,7 @@ export class Navigation{
         this.buttonCloseBurger.classList.remove("show");
     }   
 
-    preventScrolling(){
+    stickyWhileScrolling(){
         if (window.scrollY > 75) {
             this.header.classList.add("scroll");
         } else {
