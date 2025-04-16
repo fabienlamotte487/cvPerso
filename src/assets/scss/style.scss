@@ -34,7 +34,7 @@ main{
     align-items: center;
 }
 
-section{
+section:not(:first-child){
     margin: 3rem 0;
     .content{
         margin: 5rem 0;
@@ -50,7 +50,7 @@ section{
 
 @media screen and (max-width: $tablet) {
     main{
-        margin: 2rem;
+        margin: 1rem;
         padding: 2rem;
     }
 }
