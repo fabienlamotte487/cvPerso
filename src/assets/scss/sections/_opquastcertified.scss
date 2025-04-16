@@ -24,10 +24,11 @@
     img.front-picture {
       position: absolute;
       z-index: 2;
-      top: 1rem;
-      right: 1rem;
+      top: 1.5rem;
+      right: 1.5rem;
       height: auto;
       width: 75px;
+      border-radius: 0;
     }
 
     img.back-picture {
@@ -91,7 +92,7 @@
     a.card-link{
       max-width: 200px;
       border-radius: 30px;
-      img:not(.back-picture){
+      img:not(.back-picture):not(.front-picture){
         border-radius: 30px;
       }
       span{
