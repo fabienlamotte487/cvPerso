@@ -209,7 +209,7 @@
                     }  
 
                     &:nth-child(2){
-                        top: 0;
+                        top: 10px;
                         left: 100px;
                         transform:rotate(10deg);
                         z-index: 2;
@@ -234,8 +234,9 @@
 
 @media screen and (max-width: $tablet) {
     #realisations {
+        margin: 1rem 0;
         .content{
-            margin-bottom: 1rem;
+            margin: 1rem 0;
         }
         #front-real {
             flex-direction: column;
