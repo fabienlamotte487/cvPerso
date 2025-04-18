@@ -1,0 +1,12 @@
+section:not(:first-child){
+    opacity: 0;
+    transition: opacity .3s ease;
+    &.appear{
+        opacity: 1;
+    }
+    margin: 3rem 0;
+
+    .content{
+        margin: 5rem 0;
+    }
+}

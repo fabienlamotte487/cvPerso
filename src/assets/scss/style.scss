@@ -15,6 +15,7 @@
 @use 'components/socials';
 @use 'components/buttons';
 @use 'components/title';
+@use 'components/sections';
 
 html, body {
     margin: 0;
@@ -36,13 +37,6 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-section:not(:first-child){
-    margin: 3rem 0;
-    .content{
-        margin: 5rem 0;
-    }
 }
 
 @media screen and (max-width: $desktop) {
