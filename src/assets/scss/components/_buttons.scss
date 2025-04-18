@@ -1,6 +1,6 @@
 @use "../variables" as *;
 
-button{
+button, a.button{
     background-color: $secondaryColor;
     color: $whiteColor;
     border: 1px solid $secondaryColor;
