@@ -24,6 +24,13 @@ $darkColor: #212121;
 $whiteColor: white;
 $greyColor: #A8A8A8;
 
+$box-shadow: 0 4px 4px rgba(0,0,0,0.59) !default;
+
+// MAIN
+$main-padding-xl: 5rem;
+$main-padding-lg: 3rem;
+$main-padding-md: 1rem;
+
 // MEDIA SCREEN
 $desktop: 1200px !default;
 $tablet: 992px !default;
@@ -32,3 +39,10 @@ $mobile: 578px !default;
 
 // NAV
 $nav-height: 75px !default;
+
+// Real-card
+$real-card-width: 300px !default;
+$real-card-scroll-animation-duration: 2s !default;
+$real-card-scroll-animation-type: ease !default;
+$real-card-background-color: $secondaryColor !default;
+$real-card-inner-background-color: $whiteColor !default;

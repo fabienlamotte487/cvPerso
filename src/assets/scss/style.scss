@@ -7,6 +7,7 @@
 @use 'sections/whoami';
 @use 'sections/opquastcertified';
 @use 'sections/highwhy';
+@use 'sections/realisation';
 
 // COMPONENTS
 @use 'components/socials';
@@ -24,7 +25,7 @@ body {
 
 main{
     margin: 5rem 15rem;
-    padding: 5rem;
+    padding: $main-padding-xl;
     border-radius: 30px;
     background-color: white;
 }
@@ -45,13 +46,13 @@ section:not(:first-child){
 @media screen and (max-width: $desktop) {
     main{
         margin: 5rem;
-        padding: 3rem;
+        padding: $main-padding-lg;
     }
 }
 
 @media screen and (max-width: $tablet) {
     main{
         margin: 1rem;
-        padding: 1rem;
+        padding: $main-padding-md;
     }
 }

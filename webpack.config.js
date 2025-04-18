@@ -2,6 +2,8 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
 
 module.exports = {
   entry: './src/assets/js/index.js',
@@ -39,6 +41,14 @@ module.exports = {
       template: './src/index.html', // ton template HTML source
       filename: 'index.html',
       inject: 'body', // insère le JS en bas du <body>
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, 'src/assets/img'),
+          to: 'images', // => copie tout dans dist/images
+        }
+      ],
     }),
   ],
   optimization: {

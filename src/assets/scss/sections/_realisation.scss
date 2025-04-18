@@ -1,0 +1,265 @@
+@use "../variables" as *;
+
+#realisations{
+    margin: 10rem 0;
+
+    > div{
+        display: none;
+        &.show{
+            display: flex;
+        }
+    }
+
+    .card-real-img{
+        position:relative;
+        width: 300px;
+        img{
+            height: auto;
+            object-fit: cover;
+            aspect-ratio: 16/9;
+            z-index: 1;
+            border-radius: 30px;
+            box-shadow: $box-shadow;
+            width: 100%;
+            object-position: 0% -25px;
+        }
+        small{
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+            background-color: $secondaryColor;
+            color: $whiteColor;
+            font-weight: bold;
+            z-index: 2;
+            padding: .5rem 1rem;
+            border-radius: 30px;
+            text-transform: uppercase;
+        }
+    }
+    
+    #back-real{
+        padding: 1rem;
+        position:relative;
+        .card-img-list{
+            display: flex;
+            align-items: end;
+            gap: 1rem;
+
+            img:not(:first-child){
+                border-radius: 50%;
+                padding: .5rem;
+                height: 50px;
+                width: 50px;
+                box-shadow: $box-shadow;
+            }
+        }
+        .card-real-img img:hover{
+            animation: 
+                object-position 
+                $real-card-scroll-animation-duration 
+                $real-card-scroll-animation-type;
+        }
+
+        button{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: -$main-padding-xl;
+            margin: auto;
+            height: 50px;
+            width: 50px;
+            background-color: $primaryColor;
+            border: 1px solid $primaryColor;
+            border-radius: 0px;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: margin-right .3s ease;
+            img{
+                width: 25px;
+                height: 25px;
+            }
+
+            $cornerSize: 20px;
+
+            &:before,
+            &:after{
+                content:"";
+                height: $cornerSize;
+                width: $cornerSize;
+                position: absolute;
+                background-image: radial-gradient(
+                    circle at 100% 100%,
+                    transparent $cornerSize,
+                    $primaryColor $cornerSize
+                );         
+            }
+
+            &:before{
+                top:-$cornerSize;
+                right: -0.75px;
+                rotate: -180deg;   
+            }
+            &:after{
+                bottom: -$cornerSize;
+                right: -0.75px;
+                rotate: 90deg;  
+            }
+
+            &:hover{
+                img{
+                    animation: margin-right .8s ease;
+                }
+            }
+        }
+    }
+    
+    #front-real{
+        justify-content: space-between;
+        align-items: center;
+        > div:first-child{
+            h2{
+                text-align: left;
+            }
+        }
+
+        > div {
+            width: 50%;
+        }
+
+        div.display-card {
+            position:relative;
+            height: 300px;
+
+            ul{
+                list-style-type: none;
+                li{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 1;
+                    a{
+                        text-decoration: none;
+                        background-color: $real-card-background-color;
+                        padding: .5rem;
+                        display: block;
+                        border-radius: 30px;
+    
+                        &:hover, &:active, &:focus, &:focus-visible {
+                            > div .card-real-img img{
+                                animation: 
+                                    object-position 
+                                    $real-card-scroll-animation-duration 
+                                    $real-card-scroll-animation-type;
+                            }
+                        }
+    
+                        > div{
+                            background-color: $real-card-inner-background-color;
+                            display: flex;
+                            flex-direction: column;
+                            border-radius: 25px;
+                            padding: 1rem;
+                            width: $real-card-width;
+    
+                            .card-real-img{
+                                position:relative;
+                                width: 100%;
+                                img{
+                                    height: auto;
+                                    object-fit: cover;
+                                    aspect-ratio: 16/9;
+                                    z-index: 1;
+                                    border-radius: 30px;
+                                    box-shadow: $box-shadow;
+                                    width: 100%;
+                                    object-position: 0% -25px;
+                                }
+                                small{
+                                    position: absolute;
+                                    bottom: 1rem;
+                                    right: 1rem;
+                                    background-color: $secondaryColor;
+                                    color: $whiteColor;
+                                    font-weight: bold;
+                                    z-index: 2;
+                                    padding: .5rem 1rem;
+                                    border-radius: 30px;
+                                    text-transform: uppercase;
+                                }
+                            }
+                            .card-real-body{
+                                width: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                h3{
+                                    font-weight: bold;
+                                    margin: 0 0 .5rem;
+                                }
+                                span{
+                                    align-self: flex-end;
+                                }
+                            }
+                        }
+                    }  
+
+                    &:nth-child(2){
+                        top: 0;
+                        left: 100px;
+                        transform:rotate(10deg);
+                        z-index: 2;
+                    }
+                    &:nth-child(3){
+                        top: 0;
+                        left: 200px;
+                        transform:rotate(20deg);
+                        z-index: 3;
+                    }
+                    &:has(a:hover), 
+                    &:has(a:active), 
+                    &:has(a:focus), 
+                    &:has(a:focus-visible){
+                        z-index: 9;
+                    }
+                } 
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    #realisations {
+        #front-real {
+            flex-direction: column;
+            > div {
+                width: 100%;
+            }
+            div.display-card{
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+@keyframes object-position {
+    0% {
+        object-position: 0% -25px;
+    }
+    100% {
+        object-position: 0% 100%;
+    }
+}
+
+@keyframes margin-right {
+    0% {
+        margin-right: 0;
+    }
+    50% {
+        margin-right: -15px;
+    }
+    100% {
+        margin-right: 0;
+    }
+}
