@@ -1,8 +1,17 @@
+@use '../variables' as *;
+
 #contactme{
     display: flex;
     justify-content: space-around;
     align-items: center;
     a{
         text-decoration: none;
+    }
+}
+
+
+@media screen and (max-width: $mobile) {
+    #contactme{
+        flex-direction: column;
     }
 }
