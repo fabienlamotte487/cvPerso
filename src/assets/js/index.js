@@ -8,6 +8,10 @@ import { Sections } from './components/sections.js';
 document.addEventListener('DOMContentLoaded', () => {
     new Sections();
     new Navigation();
-    new Carousel();
     new Cardreal();
+
+    document.querySelectorAll(".carousel").forEach(carousel => {
+        let itemsToShow = carousel.getAttribute("data-item");
+        new Carousel(carousel, itemsToShow);
+    })
 });

@@ -119,7 +119,7 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel inline">
+            <div class="carousel">
                 <div class="carousel-nav">
                     <button type="button" title="Faire défiler à la carte précédente" disabled>
                         <img loading="lazy" src="<%= require('./assets/img/svg/arrow-left.svg') %>" alt="Faire défiler à la carte précédente" title="Faire défiler à la carte précédente" />
@@ -223,8 +223,35 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel">
-                <!-- Carousel généré en js -->
+            <div class="carousel" data-item="4">
+                <div class="carousel-nav">
+                    <button type="button" title="Faire défiler à la carte précédente" disabled>
+                        <img loading="lazy" src="<%= require('./assets/img/svg/arrow-left.svg') %>" alt="Faire défiler à la carte précédente" title="Faire défiler à la carte précédente" />
+                    </button>
+                    <button type="button" title="Faire défiler à la carte suivante">
+                        <img loading="lazy" src="<%= require('./assets/img/svg/arrow-right.svg') %>" alt="Faire défiler à la carte suivante" title="Faire défiler à la carte suivante" />
+                    </button>
+                </div>
+                <ul class="carousel-list">
+                    <li>
+                        <div class="carousel-item">
+                            <img loading="lazy" src="<%= require('./assets/img/svg/muscle.svg') %>" alt="" title="" />
+                            <p>“Mon goût pour le défi, la technologie, et la création m’ont naturellement dirigé vers le web”</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="carousel-item">
+                            <img loading="lazy" src="<%= require('./assets/img/svg/handicap.svg') %>" alt="" title="" />
+                            <p>“Les bonnes pratiques m’ont questionné sur l’accessibilité. J’ai beaucoups travaillé pour n’exclure personne dans mes projets”</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="carousel-item">
+                            <img loading="lazy" src="<%= require('./assets/img/svg/conversation.svg') %>" alt="" title="" />
+                            <p>“Mon expérience passée dans la vente m’a donné goût aux échanges avec les clients, c’est ce que je souhaite retrouver en proposant mes solutions en freelance”</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
         <section id="contactme">
