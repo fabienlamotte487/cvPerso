@@ -2,7 +2,7 @@ export class Carousel {
     constructor(carousel, itemToShow = 1) {
         this.carousel = carousel;
         this.list = this.carousel.querySelector('.carousel-list');
-        this.buttons = this.carousel.querySelectorAll('.carousel-nav button');
+        this.buttonNav = this.carousel.querySelectorAll('.carousel-nav button');
         this.items = this.list.querySelectorAll('.carousel-item');
         this.itemToShowDefault = itemToShow;
         this.itemToShow = itemToShow;
@@ -11,8 +11,8 @@ export class Carousel {
         this.totalItems = this.items.length;
         this.maxIndex = Math.ceil(this.totalItems / this.itemToShow) - 1;
 
-        this.previousButton = this.buttons[0];
-        this.nextButton = this.buttons[1];
+        this.previousButton = this.buttonNav[0];
+        this.nextButton = this.buttonNav[1];
 
         this.init();
     }
@@ -32,7 +32,7 @@ export class Carousel {
     }
 
     checkElements() {
-        return this.list && this.buttons.length === 2 && this.items.length > 0;
+        return this.list && this.buttonNav.length === 2 && this.items.length > 0;
     }
 
     setItemWidth() {
@@ -82,7 +82,6 @@ export class Carousel {
             li.style.flex = `0 0 ${100 / this.itemToShow}%`;
         });
     
-        // Update UI
         this.updateCarousel();
         this.disableOrEnableButtons();
     }

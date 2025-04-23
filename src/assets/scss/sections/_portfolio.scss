@@ -1,0 +1,59 @@
+@use '../variables' as *;
+
+#portfolio{
+    .portfolio-detail{
+        display: flex;
+        margin-bottom: 3rem;
+        gap: .5rem;
+        > *{
+            width: 50%;
+        }
+        img{
+            height: 100%;
+            object-fit: cover;
+        }
+        .portfolio-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .portfolio-footer{
+                margin-top: 3rem;
+                img{
+                    height: 50px;
+                    width: 50px;
+                }
+                .cta{
+                    margin: 1.5rem 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap:.5rem;
+                }
+            }
+        }
+    }
+    .carousel-list{
+        li{
+            .carousel-item{
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    transition: opacity .3s ease;
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Responsive
+@media screen and (max-width: $smalltablet) {
+    #portfolio .portfolio-detail {
+        flex-direction: column;
+        > *{
+            width: 100%;
+        }
+    }
+}
