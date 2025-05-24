@@ -14,6 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll(".carousel").forEach(carousel => {
         let itemsToShow = carousel.getAttribute("data-item");
-        new Carousel(carousel, itemsToShow);
+        if(itemsToShow){
+            new Carousel(carousel, itemsToShow);
+        } else {
+            new Carousel(carousel);
+        }
     })
 });
