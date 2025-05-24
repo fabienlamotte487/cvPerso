@@ -66,8 +66,8 @@ export class Portfolio{
                 <div class="portfolio-footer">
                     ${buildTechno()}
                     <div class="cta">
-                        <a href="${datas.projectlink}" class="button">Voir le projet</a>
-                        <a href="${datas.githublink}" class="button">Accéder au github</a>
+                        <a href="${datas.projectlink}" class="button" target="_blank">Voir le projet</a>
+                        <a href="${datas.githublink}" class="button" target="_blank">Accéder au github</a>
                     </div>
                 </div>
             </div>
