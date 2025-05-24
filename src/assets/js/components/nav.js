@@ -5,6 +5,7 @@ export class Navigation{
         this.nav = document.querySelector("nav");
         this.header = document.querySelector("header");
         this.liMenus = document.querySelectorAll("nav ul:first-child li a");
+        this.evitLink = document.getElementById("evit_link");
         this.init();
     }
 
@@ -18,7 +19,7 @@ export class Navigation{
 
         this.buttonBurger.addEventListener("click", this.showResponsiveNavigation.bind(this));
         this.buttonCloseBurger.addEventListener("click", this.hideResponsiveNavigation.bind(this));
-        this.liMenus.forEach((liMenu) => {
+        [...this.liMenus, this.evitLink].forEach((liMenu) => {
             liMenu.addEventListener("click", (e) => {
                 this.hideResponsiveNavigation.bind(this)
                 this.scrollToSmooth.bind(this)(e, liMenu)

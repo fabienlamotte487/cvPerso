@@ -121,3 +121,23 @@ header{
 
 
 }
+#evit_link{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: $nav-height;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background: white;
+    color: $primaryColor;
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: auto;
+    display: flex;
+    z-index:9;
+
+    &:active, &:focus{
+        left:0;
+    }
+}
