@@ -19,7 +19,10 @@ export class Navigation{
         this.buttonBurger.addEventListener("click", this.showResponsiveNavigation.bind(this));
         this.buttonCloseBurger.addEventListener("click", this.hideResponsiveNavigation.bind(this));
         this.liMenus.forEach((liMenu) => {
-            liMenu.addEventListener("click", this.hideResponsiveNavigation.bind(this));
+            liMenu.addEventListener("click", (e) => {
+                this.hideResponsiveNavigation.bind(this)
+                this.scrollToSmooth.bind(this)(e, liMenu)
+            });
         });
         
         window.addEventListener("scroll", this.stickyWhileScrolling.bind(this));
@@ -39,7 +42,22 @@ export class Navigation{
         this.buttonCloseBurger.classList.add("show");
     }
 
-    hideResponsiveNavigation(){
+    scrollToSmooth(e, itemMenu){
+        e.preventDefault();
+        const targetId = itemMenu.getAttribute("href").substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 150, // Ajuster la position pour le header sticky
+                behavior: "smooth"
+            });
+        } else {
+            console.error(`L'élément avec l'ID ${targetId} n'existe pas.`);
+        }
+    }
+
+    hideResponsiveNavigation(e, liMenu = null){
         this.nav.classList.remove("display");
         this.buttonBurger.classList.add("show");
         this.buttonCloseBurger.classList.remove("show");
