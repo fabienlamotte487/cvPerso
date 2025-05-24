@@ -3,35 +3,25 @@
         {
             "id":0,
             "title": "Devis Maker",
-            "description": "Explication très brêve de la réalisation.Explication très brêve de la réalisation.Explication très brêve de la réalisation.Explication très brêve de la réalisation.Explication très brêve de la réalisation.Explication très brêve de la réalisation.Explication très brêve de la réalisation.Explication très brêve de la réalisation.Explication très brêve de la réalisation.",
+            "description": "J'ai créé un site web qui me permet de générer un devis en ligne, que je peux ensuite imprimer ou envoyer par mail. Le site est très simple d'utilisation, il suffit de remplir le formulaire. Le devis est ensuite généré au format PDF et peut être téléchargé.",
             "imageName": "devis_maker.png",
-            "githublink": "",
-            "projectlink": "",
+            "githublink": "https://github.com/fabienlamotte487/devismaker",
+            "projectlink": "https://fabienlamotte487.github.io/devismaker/",
             "techno": [
                 {
                     "id": 0,
-                    "libelle": "Instagram",
-                    "filename": "instagram.svg"
-                },
-                {
-                    "id": 1,
-                    "libelle": "Javascript",
-                    "filename": "javascript.svg"
-                },
-                {
-                    "id": 2,
-                    "libelle": "Linkedin",
-                    "filename": "linkedin.svg"
-                },
-                {
-                    "id": 3,
                     "libelle": "HTML",
                     "filename": "html.svg"
                 },
                 {
-                    "id": 4,
+                    "id": 1,
                     "libelle": "CSS",
                     "filename": "css.svg"
+                },
+                {
+                    "id": 2,
+                    "libelle": "Javascript",
+                    "filename": "javascript.svg"
                 }
             ]
         },
@@ -40,66 +30,21 @@
             "title": "Devis Maker 2",
             "description": "Explication très brêve de la réalisation.Explication très brêve de la réalisation.Explication très brêve de la réalisation.Explication très brêve de la réalisation.Explication très brêve de la réalisation.Explication très brêve de la réalisation.Explication très brêve de la réalisation.Explication très brêve de la réalisation.Explication très brêve de la réalisation.",
             "imageName": "devis_maker.png",
-            "githublink": "",
-            "projectlink": "",
+            "githublink": "https://github.com/fabienlamotte487/devismaker",
+            "projectlink": "https://fabienlamotte487.github.io/devismaker/",
             "techno": [
                 {
                     "id": 0,
-                    "libelle": "Instagram",
-                    "filename": "instagram.svg"
-                },
-                {
-                    "id": 1,
                     "libelle": "Javascript",
                     "filename": "javascript.svg"
                 },
                 {
-                    "id": 2,
-                    "libelle": "Linkedin",
-                    "filename": "linkedin.svg"
-                },
-                {
-                    "id": 3,
-                    "libelle": "HTML",
-                    "filename": "html.svg"
-                },
-                {
-                    "id": 4,
-                    "libelle": "CSS",
-                    "filename": "css.svg"
-                }
-            ]
-        },
-        {
-            "id":2,
-            "title": "Devis Maker 3",
-            "description": "Explication très brêve de la réalisation.Explication très brêve de la réalisation.Explication très brêve de la réalisation.Explication très brêve de la réalisation.Explication très brêve de la réalisation.Explication très brêve de la réalisation.Explication très brêve de la réalisation.Explication très brêve de la réalisation.Explication très brêve de la réalisation.",
-            "imageName": "devis_maker.png",
-            "githublink": "",
-            "projectlink": "",
-            "techno": [
-                {
-                    "id": 0,
-                    "libelle": "Instagram",
-                    "filename": "instagram.svg"
-                },
-                {
                     "id": 1,
-                    "libelle": "Javascript",
-                    "filename": "javascript.svg"
-                },
-                {
-                    "id": 2,
-                    "libelle": "Linkedin",
-                    "filename": "linkedin.svg"
-                },
-                {
-                    "id": 3,
                     "libelle": "HTML",
                     "filename": "html.svg"
                 },
                 {
-                    "id": 4,
+                    "id": 2,
                     "libelle": "CSS",
                     "filename": "css.svg"
                 }
