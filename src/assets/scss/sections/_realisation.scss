@@ -207,19 +207,23 @@
                             }
                         }
                     }  
-
                     &:nth-child(2){
-                        top: 10px;
-                        left: 100px;
-                        transform:rotate(10deg);
+                        bottom: 0;
+                        left: 40px;
+                        transform:rotate(0);
                         z-index: 2;
                     }
                     &:nth-child(3){
-                        top: 0;
-                        left: 200px;
-                        transform:rotate(20deg);
+                        bottom: 0;
+                        left: 40px;
+                        transform:rotate(0);
                         z-index: 3;
                     }
+                    &:nth-child(2), &:nth-child(3){
+                        transition: bottom .3s ease, left .3s ease, transform .3s ease;
+                        transition-delay: 1s;
+                    }
+                    
                     &:has(a:hover), 
                     &:has(a:active), 
                     &:has(a:focus), 
@@ -228,6 +232,19 @@
                     }
                 } 
             }
+        }
+    }
+
+    &.appear #front-real .display-card ul li {
+        &:nth-child(2){
+            bottom: 20px;
+            left: 100px;
+            transform:rotate(10deg);
+        }
+        &:nth-child(3){
+            bottom: 40px;
+            left: 150px;
+            transform:rotate(20deg);
         }
     }
 }
