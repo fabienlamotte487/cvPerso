@@ -12,7 +12,7 @@
                     "image": "react-native.svg"
                 }
             ],
-            "description": "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum"
+            "description": "Premier projet réalisé au sein de l'agence Ewill, je l'ai repris en remplaçant le développeur initial. Il s'agit d'une application destinée à la communauté d’agglomération du Pays du Coquelicot, permettant aux habitants d’accéder à des informations sur les services locaux, les événements et les actualités. Mon travail a principalement porté sur l’intégration et l’optimisation des performances. Le véritable défi a été l’implémentation de la cartographie, un domaine que je n’avais encore jamais abordé jusque-là."
         },
         {
             "id": 1,
@@ -26,7 +26,7 @@
                     "image": "react-native.svg"
                 }
             ],
-            "description": "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum"
+            "description": "LocalibR est une application de location de matériel de bricolage. Je suis assez fier de ce que j’ai pu réaliser en termes de développement, car le code reflète un travail important d’organisation, avec une structure claire et cohérente. Il me reste encore du chemin à parcourir en matière d’optimisation, mais on perçoit une véritable montée en compétences. J’ai eu la chance de pouvoir échanger directement avec les clients, et j’ai adoré cet aspect de mon travail. J’ai pu les accompagner de bout en bout dans la concrétisation de leur projet, en les conseillant sur les fonctionnalités et l’ergonomie de l’application. Ce projet m’a beaucoup appris sur la gestion de projet et la relation client."
         },
         {
             "id": 2,
@@ -40,7 +40,7 @@
                     "image": "react-native.svg"
                 }
             ],
-            "description": "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum"
+            "description": "RRTHDF est une application développée pour la région Hauts-de-France, permettant aux utilisateurs d’accéder à des informations sur les transports en commun, les horaires et les itinéraires. J’ai été en charge de l’intégration complète de l’application, incluant la mise en place de la navigation, des fonctionnalités de recherche et de filtrage, ainsi que l’optimisation des performances pour garantir une expérience utilisateur fluide. Je suis particulièrement fier des animations que j’ai intégrées, notamment sur la recherche d’itinéraires. Cela dit, certains aspects de performance restent perfectibles de mon côté."
         }
     ]
 }
