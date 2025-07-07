@@ -3,7 +3,7 @@
         {
             "id":0,
             "title": "Devis Maker",
-            "description": "J'ai créé un site web qui me permet de générer un devis en ligne, que je peux ensuite imprimer ou envoyer par mail. Le site est très simple d'utilisation, il suffit de remplir le formulaire. Le devis est ensuite généré au format PDF et peut être téléchargé.",
+            "description": "J'ai créé un site web qui me permet de générer un devis en ligne, que je peux ensuite imprimer ou envoyer par mail. Le site est très simple d'utilisation, il suffit de remplir le formulaire. Le devis est ensuite généré au format PDF et peut être téléchargé. Il manque des éléments pour le rendre commerciable pour le moment.",
             "imageName": "devis_maker.png",
             "githublink": "https://github.com/fabienlamotte487/devismaker",
             "projectlink": "https://fabienlamotte487.github.io/devismaker/",
@@ -27,11 +27,11 @@
         },
         {
             "id":1,
-            "title": "Devis Maker 2",
-            "description": "Explication très brêve de la réalisation.Explication très brêve de la réalisation.Explication très brêve de la réalisation.Explication très brêve de la réalisation.Explication très brêve de la réalisation.Explication très brêve de la réalisation.Explication très brêve de la réalisation.Explication très brêve de la réalisation.Explication très brêve de la réalisation.",
-            "imageName": "devis_maker.png",
-            "githublink": "https://github.com/fabienlamotte487/devismaker",
-            "projectlink": "https://fabienlamotte487.github.io/devismaker/",
+            "title": "Sudoku Maker",
+            "description": "Projet from scratch réalisé en HTML / CSS / JAVASCRIPT. J'utilise les apis de Dosuku qui me génère la grille, et j'établit de mon coté la logique Javascript pour rendre le tout intéractif !",
+            "imageName": "sudoku_maker.png",
+            "githublink": "https://github.com/fabienlamotte487/SudokuMaker",
+            "projectlink": "https://fabienlamotte487.github.io/SudokuMaker/",
             "techno": [
                 {
                     "id": 0,
