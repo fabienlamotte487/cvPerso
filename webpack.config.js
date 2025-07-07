@@ -9,9 +9,9 @@ module.exports = {
   entry: './src/assets/js/index.js',
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'docs'),
     clean: true, // supprime les fichiers anciens à chaque build
-    publicPath: '/', // permet de servir le contenu depuis la racine
+    publicPath: './', // permet de servir le contenu depuis la racine
   },
   mode: 'production',
   module: {
@@ -46,7 +46,7 @@ module.exports = {
       patterns: [
         {
           from: path.resolve(__dirname, 'src/assets/img'),
-          to: 'images', // => copie tout dans dist/images
+          to: 'images', // => copie tout dans docs/images
         }
       ],
     }),
@@ -60,7 +60,7 @@ module.exports = {
   },
   devServer: {
     static: {
-      directory: path.resolve(__dirname, 'dist'), // dossier à servir
+      directory: path.resolve(__dirname, 'docs'), // dossier à servir
     },
     open: true,         // ouvre le navigateur automatiquement
     hot: true,          // active le hot reload
