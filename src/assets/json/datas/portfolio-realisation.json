@@ -28,25 +28,25 @@
         {
             "id":1,
             "title": "Sudoku Maker",
-            "description": "Projet from scratch réalisé en HTML / CSS / JAVASCRIPT. J'utilise les apis de Dosuku qui me génère la grille, et j'établit de mon coté la logique Javascript pour rendre le tout intéractif !",
+            "description": "Projet from scratch réalisé en HTML / CSS / JAVASCRIPT. J'utilise les apis de Dosuku qui me génère la grille, et j'établis de mon coté la logique Javascript pour rendre le tout intéractif !",
             "imageName": "sudoku_maker.png",
             "githublink": "https://github.com/fabienlamotte487/SudokuMaker",
             "projectlink": "https://fabienlamotte487.github.io/SudokuMaker/",
             "techno": [
                 {
                     "id": 0,
-                    "libelle": "Javascript",
-                    "filename": "javascript.svg"
-                },
-                {
-                    "id": 1,
                     "libelle": "HTML",
                     "filename": "html.svg"
                 },
                 {
-                    "id": 2,
+                    "id": 1,
                     "libelle": "CSS",
                     "filename": "css.svg"
+                },
+                {
+                    "id": 2,
+                    "libelle": "Javascript",
+                    "filename": "javascript.svg"
                 }
             ]
         }
